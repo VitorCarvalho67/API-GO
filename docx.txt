@@ -1,0 +1,22 @@
+(Innstalar as extensões do go)
+
+go get -u github.com/gin-gonic/gin
+go mod innit nome
+go run main.go
+go build main.go
+set GOOS=linux (ou) set GOOS=windows
+
+data first 
+arquivo sempre com letra minuscula 
+func cc invertido
+
+usar ponteiro 
+
+go routine
+criar canal (<-)
+
+
+go get github.com/google/uuid
+go get gorm.io/gorm
+go get gorm.io/driver/mysql
+
