@@ -1,7 +1,7 @@
 # API-GO
 
 <div align="center">
-  <img src="https://github.com/VitorCarvalho67/API-GO/assets/102667323/b94436b1-b1b3-4b08-8f48-9f50fec91a5b" />
+  <img src="https://github.com/VitorCarvalho67/API-GO/assets/102667323/25bd1f0d-af66-48d0-a825-9beadbb9b985" />
 </div>
 
 ## Description
