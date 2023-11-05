@@ -66,6 +66,26 @@ func main() {
 		c.JSON(200, user)
 	})
 
+	// login
+	r.POST("/login", func(c *gin.Context) {
+		var user models.User
+		if err := c.ShouldBindJSON(&user); err != nil {
+			c.JSON(400, gin.H{
+				"error": err.Error(),
+			})
+			return
+		}
+		var userDB models.User
+		db.Where("email = ?", user.Email).First(&userDB)
+		if userDB.Password != user.Password {
+			c.JSON(401, gin.H{
+				"error": "Senha incorreta",
+			})
+			return
+		}
+		c.JSON(200, userDB)
+	})
+
 	r.Run()
 
 	// listen and serve on 0.0.0.0:8080
